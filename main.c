@@ -49,11 +49,11 @@ int main(){
 
 
 
-	for(int i = 0; i < 30; i++){
-
-		printf("Nombre: %s\n", datos[i][1] );
-
-	}
+//	for(int i = 0; i < 30; i++){
+//
+//		printf("Nombre: %s\n", datos[i][1] );
+//
+//	}
 
 	char nombre[20];
 	int edad = 0, edad_minima=0, edad_maxima=0;
@@ -72,8 +72,8 @@ int main(){
 	scanf("%d-%d", &edad_minima, &edad_maxima);
 //	sprintf(persona[2], "%d", edad);
 	//strncpy(persona[0], edad, 20);
-	printf("Ingresa tu sexo:\t\n");	
-	printf("a) femenino\n");
+	printf("Ingresa tu sexo:\n\t");	
+	printf("a) femenino\n\t");
 	printf("b) masculino\n");
 	scanf(" %c", &sexo);
 
@@ -87,12 +87,12 @@ int main(){
 //	//printf(":\t");
 //	scanf(" %c", &qbuscas);
 //	if( qbuscas == 'b'){
-		printf("Cual es tu preferencia sexual?:\t\n");
-		printf("a) femenino\n");
+		printf("Cual es tu preferencia sexual?:\n\t");
+		printf("a) femenino\n\t");
 		printf("b) masculino\n");
 		scanf(" %c", &psexual);
 		printf("Te gustaria que tu pareja tenga estudios universitarios?\n\t");
-		printf("a) si\n");
+		printf("a) si\n\t");
 		printf("b) no\n");
 		scanf(" %c", &uni);
 //	}
@@ -161,10 +161,9 @@ int main(){
 
 
 		// deporte
-		
-
-
-
+		if( !strncmp(datos[i][5], deporte, 20) ){
+			match_caracteristicas++;
+		}	
 
 
 		if( match_caracteristicas >= 3 ){
